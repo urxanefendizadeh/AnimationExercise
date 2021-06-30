@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    width: 10%;
+    height: 100px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    animation-name: animation;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes animation{
+    0%{left: 0deg; top: 0%; color: blue;}
+    25%{left: 90%; top: 0%; color:orange;}
+    50%{left: 85%; top: 545px; color:green;}
+    75%{left:0%; top: 545px; color:yellow;}
+    100%{left: 0%; top: 0%; color: blue;}
+}
+i{
+font-size: 100px;
+}
